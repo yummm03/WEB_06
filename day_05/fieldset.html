@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <style>
+        .container {
+            border: 1px solid #222;
+            border-radius: 2px;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- form 내부의 input태그들을 구분해주는 용도로 사용한다. -->
+    <!-- 엄밀히 따지면 시맨틱태그에 포함되므로 잘 쓰면 좋다. -->
+    <fieldset>
+        <!-- legend태그는 fieldset을 설명하는 태그. 무조건 세트다. -->
+        <legend>주소</legend>
+        <input type="text">
+    </fieldset>
+
+    <fieldset>
+        <legend>전화번호</legend>
+        <input type="tel">
+    </fieldset>
+
+    <!-- fieldset 보다 그냥 직접 구조를 만드는것이 디자인상으로 더 좋다. -->
+    <!-- MDN Web Docs - Mozilla : https://developer.mozilla.org/ko/ -->
+    <!-- 위의 주소에 들어가면 다양한 코드, 태그들의 설명을 볼 수 있다. -->
+    <div class="container">
+        <h3>주소</h3>
+        <input type="text">
+    </div>
+</body>
+</html>
