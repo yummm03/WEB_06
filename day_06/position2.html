@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            height: 5000px;
+        }
+        header {
+            height: 80px;
+            background-color: coral;
+            padding: 0 32px;
+
+            /* position: fixed;를 주게되면 width가 무시되므로 반드시  width: 100%;를 줘야함 */
+            width: 100%;
+            box-sizing: border-box;
+
+            /* fixed는 내 브라우저를 기준으로 정렬된다. */
+            position: fixed;
+            top: 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        nav {
+            background-color: gray;
+            height: 16px;
+            width: 800px;
+        }
+        .icons {
+            background-color: gray;
+            height: 48px;
+            width: 200px;
+        }
+        .container {
+            height: 500px;
+            
+            /* 
+                헤더 여백을 줄 때는 padding-top을 사용하는것이 좋다.
+                margin-top을 주면 나중에 오류가 생길 수 있음
+            */
+            padding-top: 80px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- header에 header-container, section에 section-container <-이렇게 넣으면 효율적임! -->
+    <header>
+        <div class="header-container">
+            <h1>logo</h1>
+            <nav>
+
+            </nav>
+            <div class="icons">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In fugiat rerum quisquam? Voluptatum sunt porro earum rerum iure cum magni facere alias iusto placeat at dolore, sapiente illo quasi repellat.
+    </div>
+    <div class="test">
+        안녕하세요?
+    </div>
+</body>
+</html>
