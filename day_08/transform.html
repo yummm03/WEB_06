@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            background-color: pink;
+
+            font-size: 24px;
+            font-weight: bold;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            opacity: 0.8;
+        }
+
+        .origin {
+            /* #222222에 80을 붙여 80%의 오퍼시티를 적용함 */
+            background-color: #22222280;
+        }
+
+        /* 
+            position 속성과 어떻게 다른가?
+
+            1. 중점
+             - position의 left:100%과 같은 값은
+               정렬될 개체에 지정하지만 중점은 컨테이너다.
+               부모컨테이너의 오른쪽 끝을 기준으로 바깥쪽에 정렬된다.
+
+             - transform 속성은 자신이 중심으로,
+               translateX(100%)는 자신의 x 크기만큼 오른쪽으로 이동한다.
+
+
+            2. 
+        */
+        .trans {
+            /*
+                translate : 이동시키는 속성
+                translate(이동거리,이동거리) - x,y축 이동
+                translateX(이동거리) - x축 이동
+                translateY(이동거리) - y축 이동
+                translateZ(이동거리) - z축 이동
+                translate3D(이동거리,이동거리,이동거리) - 3d 이동
+            */
+            
+            /* transform: translate(100%, 100%); */
+
+            /* 
+                scale : 크기를 변화시키는 속성
+
+                scale(비율) : 1:1 비율로 변형
+                scale(X비율,Y비율) : 자율변형
+                scaleX(비율) : X축 비율 변형
+                scaleY(비율) : Y축 비율 변형
+                scaleZ(비율) : Z축 비율 변형
+                scale3D(비율,비율,비율) : 3d 비율 변형
+            */
+
+            /* transform: scale(2); */
+
+            /*
+                width: 200px;
+                height: 200px;
+            */
+
+            /* 
+                wh_vs_scale.html을 참고해 width,height를 직접 바꾸는것과
+                scale을 이용해 크기를 바꾸는것의 차이를 완벽히 구분해보자
+            */
+
+            /* 
+                rotate : 회전
+                rotate(각도)
+                ..
+                ..
+                ..
+                ..
+                (x,y,z,3d 등)
+            */
+
+            /* transform: rotate(45deg); */
+            
+            /* skew : 기울임 속성 */
+            /* transform: skewX(10deg) skewY(10deg); */
+
+            /* transform이 어디를 기준으로 작동될것인지 */
+            /* 기본값 : center center */
+            transform-origin: top center;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box origin">
+        원래 위치
+    </div>
+    <div class="box trans">
+        BOX
+    </div>
+</body>
+</html>
