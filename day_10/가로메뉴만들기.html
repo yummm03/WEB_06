@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .nav {
+            width: 100%;
+            /* overflow: hidden;
+            position: relative; */
+            display: flex;
+        }
+        .nav li{
+            font-size: 14px;
+            background-color: #222;
+            text-align: center;
+            font-weight: 900;
+            font-family: Tahoma;
+            border-bottom: 1px solid #808080;
+            line-height: 40px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 40px;
+        }
+        .nav li:hover {
+            color: red;
+        }
+        .nav li:hover .submenu {
+            height: 160px;
+        }
+        .submenu {
+            height: 0;
+            overflow: hidden;
+            transition-duration: 0.5s;
+        }
+        .submenu li {
+            font-size: 12px;
+            background-color: #999;
+            /* line-height: 40px; */
+            border-bottom: 1px solid #777;
+            /* box-sizing: border-box; */
+        }
+        .submenu li a {
+            color: black;
+        }
+        .submenu li:hover {
+            background-color: burlywood;
+        }
+        .submenu li:hover a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 메인 메뉴 -->
+    <ul class="nav">
+        <li>MENU-1
+            <!-- 서브 메뉴1 -->
+            <ul class="submenu">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
+            </ul>
+        </li>
+        <li>MENU-2
+            <!-- 서브 메뉴2 -->
+            <ul class="submenu">
+                <li><a href="#">menu2-1</a></li>
+                <li><a href="#">menu2-2</a></li>
+                <li><a href="#">menu2-3</a></li>
+                <li><a href="#">menu2-4</a></li>
+            </ul>
+        </li>
+        <li>MENU-3
+            <!-- 서브 메뉴3 -->
+            <ul class="submenu">
+                <li><a href="#">menu3-1</a></li>
+                <li><a href="#">menu3-2</a></li>
+                <li><a href="#">menu3-3</a></li>
+                <li><a href="#">menu3-4</a></li>
+            </ul>
+        </li>
+        <li>MENU-4
+            <!-- 서브 메뉴4 -->
+            <ul class="submenu">
+                <li><a href="#">menu4-1</a></li>
+                <li><a href="#">menu4-2</a></li>
+                <li><a href="#">menu4-3</a></li>
+                <li><a href="#">menu4-4</a></li>
+            </ul>
+        </li>
+        <li>MENU-5
+            <!-- 서브 메뉴5 -->
+            <ul class="submenu">
+                <li><a href="#">menu5-1</a></li>
+                <li><a href="#">menu5-2</a></li>
+                <li><a href="#">menu5-3</a></li>
+                <li><a href="#">menu5-4</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
