@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+        .animation-container {
+            width: 40px;
+            aspect-ratio: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%,70%);
+        }
+        .word {
+            position: absolute;
+            width: 100px;
+            height: 200px;
+            background-color: coral;
+        }
+        @keyframes loading {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-container">
+            <div class="word"></div>
+        </div>
+    </div>
+</body>
+</html>

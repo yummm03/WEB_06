@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+        .animation-container {
+            width: 100px;
+            aspect-ratio: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 50px;
+            box-sizing: border-boxs;
+            animation: loading infinite 3s;
+            opacity: 1;
+
+        }
+        .loading:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        .loading:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        @keyframes loading {
+            from {
+                opacity: 1;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-container">
+            <div class="loading"></div>
+            <div class="loading"></div>
+            <div class="loading"></div>
+        </div>
+    </div>
+</body>
+</html>
