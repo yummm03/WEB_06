@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+        .animation-container {
+            width: 40px;
+            aspect-ratio: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,100%);
+        }
+        .curser {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            border: 5px solid white;
+            border-radius: 30px;
+            animation: curser infinite 2.5s;
+        }
+        .dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+            background-color: white;
+            box-sizing: border-box;
+            animation: dot infinite 2.5s;
+        }
+        @keyframes curser {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            20% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(50px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+        }
+        @keyframes dot {
+            0% {
+                transform: translate(6px,5px);
+            }
+            20% {
+                transform: translate(6px,5px);
+            }
+            50% {
+                transform: translate(6px,16px);
+            }
+            100% {
+                transform: translate(6px,16px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-container">
+            <div class="curser">
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
