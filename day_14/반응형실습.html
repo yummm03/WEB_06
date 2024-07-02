@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        #my-section {
+            padding: 0 32px;
+        }
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-top: 32px;
+        }
+        .contents {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+        .box {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: lightgray;
+        }
+        .explane {
+            width: 100%;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 32px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+
+        /* 태블릿 */
+        @media screen and (max-width:1365px) {
+            .section-container {
+                width: 100%;
+            }
+        }
+
+
+        /* 모바일 */
+        @media screen and (max-width:767px) {
+            #my-section {
+                padding: 0 20px;
+            }
+            .contents {
+                flex-direction: column;
+                margin-bottom: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="my-section">
+        <div class="section-container">
+            <div class="contents">
+                <div class="box"></div>
+                <div class="explane">
+                    <h2>제목 영역</h2>
+                    <h3>부제목 영역</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Optio, nihil omnis. Ratione deleniti suscipit doloremque
+                        dolorem aspernatur similique culpa, quis, veritatis nisi,
+                        labore ad quos esse magnam enim ullam corporis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
