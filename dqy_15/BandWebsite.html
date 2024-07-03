@@ -6,60 +6,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
-        a {
+        /* a {
             text-decoration: none;
             color: #222;
-        }
+        } */
     </style>
 </head>
 <body>
     <section id="head-section">
         <div class="nav">
             <a href="#">
-                <div class="band-logo">
-                    <img src="img/spr_intro.png" alt="">
-                    <a href="#">한국어</a>
-                    <a href="#">회원가입</a>
-                    <button>로그인</button>
+                <div class="head-band-logo">
+                    <img src="" alt="">
                 </div>
             </a>
-        </div>
-        <div class="phone-container">
-            <div class="phone-img">
-                <img src="img/bg_sloganImg.jpg" alt="">
+            <div class="head-button">
+                <select name="" id="">
+                    <option value="">한국어</option>
+                    <option value="">English</option>
+                </select>
+                <a href="#">회원가입</a>
+                <a href="#" class="head-sign-button">로그인</a>
             </div>
-            <div class="phone-explane">
+        </div>
+    </section>
+
+    <section id="intro-section">
+        <div class="intro-container">
+            <figure>
+                <img src="img/bg_sloganImg.jpg" alt="">
+            </figure>
+            <div class="intro-explane">
                 <h1>
                     모임이 쉬워진다! <br>
                     우리끼리 밴드
                 </h1>
                 <h4>당신의 모임도 BAND로 시작하세요.</h4>
-                <button>로그인</button>
-                <button>회원가입</button>
-                <div class="phone-ques-box">
-                    <div class="phone-ques">
-                        <p>내게 맞는 밴드를 만나려면<p>
-                        <a href="#">밴드 찾기</a>
-                    </div>
-                    <div class="phone-ques">
-                        <p>모임별 밴드 활용법<p>
-                        <a href="#">밴드 가이드 보기</a>
-                    </div>
-                    <div class="phone-ques">
-                        <p>만 13세 미만이라면?<p>
-                        <a href="#">'밴드 키즈'알아보기</a>
-                    </div>
-                </div>
+                <a href="" class="intro-sign-button">로그인</a>
+                <a href="" class="intro-join-button">회원가입</a>
+                <p>
+                    내게 맞는 밴드를 만나려면
+                    <a href="#">밴드 찾기</a>
+                <p>
+                <p>
+                    모임별 밴드 활용법
+                    <a href="#">밴드 가이드 보기</a>
+                <p>
+                <p>
+                    만 13세 미만이라면?
+                    <a href="#">'밴드 키즈'알아보기</a>
+                <p>
             </div>
         </div>
     </section>
-    <div class="class-img">
-        <h2>모임을 위한 공간, 밴드</h2>
-        <h4>
-            밴드는 그룹 멤버와 함께 하는 공간입니다. <br>
-            동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
-        </h4>
-    </div>
+
+    <section id="bg-section">
+        <div class="bg-container">
+            <h2>모임을 위한 공간, 밴드</h2>
+            <h4>
+                밴드는 그룹 멤버와 함께 하는 공간입니다. <br>
+                동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
+            </h4>
+        </div>
+    </section>
+
+
     <section id="class-section">
         <div class="class-container">
             <div class="class-rec">
@@ -80,7 +91,7 @@
             </div>
             <div class="class-rec">
                 <img src="img/img_seo03.jpg" alt="">
-                <h3>어떤 모임이라도!</h3>
+                <h3>내가 원하는 모임 찾기</h3>
                 <p>
                     취미, 스포츠, 또래 모임 등 <br>
                     나와 같은 관심사 밴드를 찾을 수 있어요.
@@ -88,121 +99,71 @@
             </div>
         </div>
     </section>
+
+
     <section id="plus-section">
         <div class="plus-container">
             <div class="plus-stitle">
                 <h3>이런 밴드는 어때요</h3>
                 <a href="#">모두보기</a>
             </div>
-            <div class="plus-contents">
-                <a>
-                    <img src="img/c_0c0Ud018svci182rp07z35w_f8a920.jpg" alt="">
-                    <a href="#">아틀리에아쿠아 (베타.구피.안시.부세.나나.활착품)</a>
-                    <p>구피.안시.베타.새우.코리.수초등등! 물생활관련 글.소통.환영합니다.</p>
-                    <p>멤버 587 리더 쵸코네티/포항/87</p>
-                </a>
-                <a>
-                    <img src="img/6_dicUd018svckdfgl6laxksg_1fme3p.jpg" alt="">
-                    <a href="">문화역사 유적지 소개</a>
-                    <p>각종 언론매체에 보도된 문화유적지 자료를 찾아서 필요하신</p>
-                    <p>멤버 1057 리더 이상섭/60/인천</p>
-                    <a href="#">
-                        문화역사 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/g_71eUd018svc131dy3tf81hf7_10cg9h.jpg" alt="">
-                    <a href="">Street Law[생활법률]</a>
-                    <p>안녕하세요. 누구에게 물어보기는 그렇고, 직접 공부하자니 어려</p>
-                    <p>멤버 5113 리더 우지영 교수</p>
-                    <a href="#">
-                        법률 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/c_885Ud018svc1dbal7hp4mdfb_309iev.jpg" alt="">
-                    <a href="">❤가수영탁 팬밴드❤</a>
-                    <p>미스터 트롯(선) 출신 영탁가수의 밴드 입니다 2007년 "사랑</p>
-                    <p>멤버 27257 리더 리더 유재태(부산)</p>
-                    <a href="#">
-                        영탁 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/bcaUd015y6z6r4v5dmit_4hbpis.jpg" alt="">
-                    <a href="">철새탐사 동호회</a>
-                    <p>철새탐사를 통하여 자연사랑을 배우는 동호회 새를 사랑하는</p>
-                    <p>멤버 1206 리더 새똥구리(최한수)</p>
-                    <a href="#">
-                        철새탐사 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/9_hh7Ud018svc1z313qkzo0r1_qpsiso.jpg" alt="">
-                    <a href="">공식 밴드 KBS 시사클럽</a>
-                    <p>당신의 하루, 대한민국의 오늘 KBS 뉴스</p>
-                    <p>멤버 45662 리더 KBS 시사클럽</p>
-                    <a href="#">
-                        뉴스 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/j_2acUd018svc165afr059e8el_ytrmm5.jpg" alt="">
-                    <a href="">공식 밴드 불광출판사</a>
-                    <p>지금 이 순간, 지금 여기! 나를 살아 숨 쉬게 하는 책!</p>
-                    <p>멤버 9743 리더 불광출판사</p>
-                    <a href="#">
-                        책 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/1_59jUd018svcxnqje2qsy9e8_bu98zb.jpg" alt="">
-                    <a href="">목표달성 100일</a>
-                    <p>100일 습관화를 통한 자기목표 달성</p>
-                    <p>멤버 654 리더 최경수</p>
-                    <a href="#">
-                        목표달성 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/g_i51Ud018svcm6dcm29mgxyj_3svvc4.jpg" alt="">
-                    <a href="">매일 크로키하기</a>
-                    <p>매일 크로키</p>
-                    <p>멤버 551 리더 먕</p>
-                    <a href="#">
-                        크로키 그림 밴드 더보기
-                    </a>
-                </a>
-                <a>
-                    <img src="img/e_g43Ud018svc1dj25f2djsvoq_ku9no.jpg" alt="">
-                    <a href="">다이어트.걷기.만보인증</a>
-                    <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                    <p>멤버 3369 리더 리더</p>
-                    <a href="#">
-                        다이어트 밴드 더보기
-                    </a>
-                </a>
-            </div>
+            <ul class="plus-list">
+                <li class="plus-contents-box">
+                    <figure>
+                        <img src="img/c_0c0Ud018svci182rp07z35w_f8a920.jpg" alt="">
+                    </figure>
+                    <div class="plus-contents">
+                        <h4><a href="#">아틀리에아쿠아 (베타.구피.안시.부세.나나.활착품)</a></h4>
+                        <p><a href="#">물생활관련 글.소통.환영합니다.</a></p>
+                        <p><a href="#">멤버 587 리더 쵸코네티/포항/87</a></p>
+                        <a href="#"></a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
+
     <section id="down-section">
         <div class="down-container">
-            <div class="down-left-con">
+            <figure>
                 <img src="" alt="">
-                <div class="down-text">
+            </figure>
+            <div class="down-text">
                     <h3>밴드앱을 다운로드 하세요!</h3>
                     <p>당신의 모임도 BAND로 시작하세요.</p>
-                </div>
             </div>
-            <div class="down-right-con">
-
+            <div class="app-down-buttons">
+                <a href="#" class="down-button google-paly"></a>
+                <a href="#" class="down-button app-store"></a>
             </div>
         </div>
     </section>
+
+
     <section id="foot-section">
         <div class="foot-container">
-            
+            <ul class="foot-list">
+                <li>
+                    <a href="#">블로그</a> &#183;
+                    <a href="#">공지사항</a> &#183;
+                    <a href="#">스티커제안</a> &#183;
+                    <a href="#">광고</a> &#183;
+                    <a href="#">이용약관</a> &#183;
+                    <a href="#">개인정보처리방침</a> &#183;
+                    <a href="#">쿠키 설정</a> &#183;
+                    <a href="#">CCPA 개인 정보 관리</a> &#183;
+                    <a href="#">청소년 보호를 위한 노력</a> &#183;
+                    <a href="#">활동정책</a> &#183;
+                    <a href="#">권리침해 신고안내</a> &#183;
+                    <a href="#">개발자</a> &#183;
+                    <a href="#">도움말</a>
+                </li>
+            </ul>
         </div>
+        <p class="foot-copy">
+            BAND &copy; 2024
+        </p>
     </section>
 </body>
 </html>
